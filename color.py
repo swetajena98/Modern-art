@@ -2,8 +2,11 @@
 
 from turtle import *
 from random import *
-shape("turtle")
-color(200,0,200)
+def randomcolour():
+  red = randint(0,255)
+  blue = randint(0,255)
+  green = randint(0,255)
+  color(red,blue.green)
 def randomplace():
   penup()
   x = randint(-100,100)
@@ -15,7 +18,7 @@ def randomheading():
   setheading(number)
  
 for i in range(20):
-  
+  randomcolour()
   randomplace()
   randomheading()
   stamp()
