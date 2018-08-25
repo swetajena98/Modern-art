@@ -10,6 +10,7 @@ def randomcolor():
   green = randint(0,255)
   color(red,green,blue)
 def randomplace():
+  penup()
   x = randint(-100,100)
   y = randint(-100,100)
   goto(x,y)
